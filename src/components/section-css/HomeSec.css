@@ -61,8 +61,13 @@
     text-align: center;
 }
 
-.our-services {
+h2{
+    font-size: 2rem;
+}
+
+.our-services p {
     color: #333;
+    font-size: 1.3rem;
 }
 
 .services-grid {
@@ -71,10 +76,10 @@
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 20px;
-    
+
 }
 
-.service-item {
+.services-section .service-item {
     background-color: #000dff;
     color: white;
     padding: 20px;
@@ -108,3 +113,44 @@
     text-decoration: none;
 }
 
+@media (max-width: 480px) {
+    .home-header h1 {
+        font-size: 2rem;
+    }
+
+    .home-header p {
+        font-size: 0.9rem;
+    }
+
+    .cta-button {
+        padding: 6px 12px;
+        font-size: 1.1rem;
+    }
+
+    .home-main {
+        align-items: center;
+        padding: 20px 10px;
+        width: 250px;
+        border-radius: 8px;
+    }
+
+    .home-image-container {
+        align-items: center;
+        height: auto;
+        width: 100%; /* Ensure the container takes full width */
+    }
+
+    .home-header-image {
+        width: 100%; /* Make the image responsive */
+        max-width: 100%; /* Ensure the image doesn't exceed the container's width */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .our-services p {
+        font-size: 0.9rem;
+    }
+}

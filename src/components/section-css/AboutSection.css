@@ -94,21 +94,6 @@
 /* ----- MEDIA QUERIES ----- */
 
 /* For tablets and below */
-@media (max-width: 768px) {
-    .about-header h1 {
-        font-size: 2.5rem;
-    }
-
-    .about-header p {
-        font-size: 1.1rem;
-    }
-
-    .about-main {
-        padding: 40px 15px;
-    }
-}
-
-/* For phones */
 @media (max-width: 480px) {
     .about-header h1 {
         font-size: 2rem;
@@ -120,5 +105,20 @@
 
     .about-main {
         padding: 30px 10px;
+    }
+
+    .about-story h2,
+    .about-mission h2,
+    .about-values h2,
+    .about-team h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .about-story p,
+    .about-mission p,
+    .about-team p,
+    .about-values ul li {
+        padding: 10px;
     }
 }

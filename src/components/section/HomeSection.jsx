@@ -1,4 +1,4 @@
-import '../section-css/HomeSection.css';
+import '../section-css/HomeSec.css';
 import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
@@ -22,7 +22,7 @@ function HomeSection() {
 
             {/* New Image Section */}
             <div className="home-image-container">
-                <img src="/image/3.png" alt="Opel Stop - Vehicle Repairs" className="home-header-image" />
+                <img src="/image/untitled_design.jpg" alt="Opel Stop - Vehicle Repairs" className="home-header-image" width="900px" />
             </div>
 
             <main className="home-main">
