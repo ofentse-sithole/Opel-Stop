@@ -1,0 +1,110 @@
+/* General container styles */
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: white;
+    color: #333;
+    min-height: 100vh;
+}
+
+/* Header section */
+.home-header {
+    background: linear-gradient(90deg, #0091ff 0%, #0627e0 100%);
+    width: 100%;
+    text-align: center;
+    padding: 50px 20px;
+    color: white;
+}
+
+.home-header h1 {
+    margin: 0;
+    font-size: 3rem;
+}
+
+.home-header p {
+    font-size: 1.3rem;
+    margin-top: 10px;
+}
+
+/* Call to Action button */
+.cta-button {
+    background-color: #000dff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #000dff;
+    color: #fff;
+}
+
+/* Main content section */
+.home-main {
+    padding: 50px 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* Services section */
+.services-section,
+.about-section {
+    margin: 50px 0;
+    text-align: center;
+}
+
+.our-services {
+    color: #333;
+}
+
+.services-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    
+}
+
+.service-item {
+    background-color: #000dff;
+    color: white;
+    padding: 20px;
+    width: 250px;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+}
+
+/* Footer styles */
+.home-footer {
+    background-color: #222;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto;
+}
+
+.home-footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.home-footer a {
+    color: #0095ff;
+    text-decoration: none;
+}
+
