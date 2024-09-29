@@ -16,7 +16,7 @@ function Navbar()  {
                 <div className="navbar-container">
                     {/* Logo navigation using Link */}
                     <Link to="/home" className="navbar-logo" onClick={closeMobileMenu}>
-                        <img src="/image/OPEL_STOP_logo-removebg-preview.png" alt="Opel Stop Logo" className="navbar-image" />
+                        <img src="/image/opel-stop-logo-removebg-preview.png" alt="Opel Stop Logo" className="navbar-image" />
                     </Link>
                     <div className="menu-icon" onClick={handleClick}>
                         <FontAwesomeIcon icon={click ? faTimes : faBars} />

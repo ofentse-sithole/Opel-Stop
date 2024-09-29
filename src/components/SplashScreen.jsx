@@ -1,28 +1,29 @@
 import { useEffect, useState } from 'react';
 import './SplashScreen.css';
 
-function SplashScreen(onLoadComplete ) {
+function SplashScreen({ onLoadComplete }) {
     const [loadingProgress, setLoadingProgress] = useState(0);
 
     useEffect(() => {
-        const timer = setTimeout(() => {
-            onLoadComplete();
-        }, 3000);
+        let progress = 0; // Initialize progress value
 
+        // Simulate the loading process
         const progressInterval = setInterval(() => {
-            setLoadingProgress((prev) => {
-                const newProgress = prev + 33.33;
-                return newProgress > 100 ? 100 : newProgress;
-            });
+            progress += 33.33;
+            setLoadingProgress(progress);
+            if (progress >= 100) {
+                clearInterval(progressInterval);
+                onLoadComplete(); // Call this function when loading is complete
+            }
         }, 1000);
 
+        // Cleanup intervals to prevent memory leaks
         return () => {
-            clearTimeout(timer);
             clearInterval(progressInterval);
         };
     }, [onLoadComplete]);
-    return (
 
+    return (
         <div className="splash-screen">
             <img src="/image/1.png" alt="Opel Stop Logo" className="splash-logo" />
             <div className="loading-bar">
@@ -34,8 +35,6 @@ function SplashScreen(onLoadComplete ) {
             <p className="loading-text">Loading... {Math.round(loadingProgress)}%</p>
         </div>
     );
-
-
 }
 
-export default SplashScreen
+export default SplashScreen;
