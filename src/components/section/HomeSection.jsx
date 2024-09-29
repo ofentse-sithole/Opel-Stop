@@ -32,34 +32,34 @@ function HomeSection() {
                         <p>Your trusted team for vehicle repairs and diagnostics.</p>
                     </div>
                     <div className="services-grid">
-                        <div className="service-item">
+                        <a href="tel:+27824034735" className="service-item">
                             <h3>Clutch Replacements</h3>
                             <p>Fast and reliable clutch replacements to keep you on the road.</p>
-                        </div>
-                        <div className="service-item">
+                        </a>
+                        <a href="tel:+27824034735" className="service-item">
                             <h3>Engine Overhaul</h3>
                             <p>Full engine services to restore performance.</p>
-                        </div>
-                        <div className="service-item">
+                        </a>
+                        <a href="tel:+27824034735" className="service-item">
                             <h3>Brake Replacements</h3>
                             <p>Expert brake services to ensure your safety.</p>
-                        </div>
-                        <div className="service-item">
+                        </a>
+                        <a href="tel:+27824034735" className="service-item">
                             <h3>Cylinder Head Overhaul</h3>
                             <p>Professional overhaul services for lasting engine health.</p>
-                        </div>
-                        <div className="service-item">
+                        </a>
+                        <a href="tel:+27824034735" className="service-item">
                             <h3>Suspension Repairs</h3>
                             <p>Keep your ride smooth with our suspension services.</p>
-                        </div>
-                        <div className="service-item">
+                        </a>
+                        <a href="tel:+27824034735" className="service-item">
                             <h3>Diagnostic Services</h3>
                             <p>Accurate diagnostics for any warning lights or issues.</p>
-                        </div>
-                        <div className="service-item">
+                        </a>
+                        <a href="tel:+27824034735" className="service-item">
                             <h3>Towing Services</h3>
                             <p>Emergency towing available for your convenience.</p>
-                        </div>
+                        </a>
                     </div>
                 </section>
 
