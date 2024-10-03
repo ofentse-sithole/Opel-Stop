@@ -1,4 +1,8 @@
 /* General layout for the About Us page */
+* {
+    box-sizing: border-box;
+}
+
 .about-container {
     display: flex;
     flex-direction: column;
@@ -94,7 +98,7 @@
 /* ----- MEDIA QUERIES ----- */
 
 /* For tablets and below */
-@media (max-width: 480px) {
+@media (max-width: 768px) {
     .about-header h1 {
         font-size: 2rem;
     }

@@ -7,4 +7,5 @@
   flex-direction: column;
   justify-content: space-between;
   background-color: #fff;
+  box-sizing: border-box;
 }
