@@ -1,5 +1,5 @@
 import '../section-css/HomeSec.css';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 function HomeSection() {
@@ -12,6 +12,27 @@ function HomeSection() {
     const AboutPage = () => {
         navigate('/about');
     };
+
+    // Slideshow logic
+    const images = [
+        '/car-images/1.jpeg',
+        '/car-images/2.jpeg',
+        '/car-images/3.jpeg',
+        '/car-images/4.jpeg',
+        '/car-images/5.jpeg'
+    ];
+    const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+        }, 5000); // Change image every 5 seconds
+
+        return () => clearInterval(interval);
+    }, [images.length]);
+
+    const previousImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+    const nextImageIndex = (currentImageIndex + 1) % images.length;
 
     return (
         <div className="home-container">
@@ -60,6 +81,28 @@ function HomeSection() {
                             <h3>Towing Services</h3>
                             <p>Emergency towing available for your convenience.</p>
                         </a>
+                    </div>
+                </section>
+
+                {/* Image Slideshow Section */}
+                <section className="gallery-section">
+                    <h2>Our Gallery</h2>
+                    <div className="carousel-container">
+                        <img
+                            src={images[previousImageIndex]}
+                            alt="Previous"
+                            className="carousel-image previous"
+                        />
+                        <img
+                            src={images[currentImageIndex]}
+                            alt="Current"
+                            className="carousel-image current"
+                        />
+                        <img
+                            src={images[nextImageIndex]}
+                            alt="Next"
+                            className="carousel-image next"
+                        />
                     </div>
                 </section>
 

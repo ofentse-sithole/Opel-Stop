@@ -114,6 +114,65 @@ h2{
     text-decoration: none;
 }
 
+/* Gallery Slideshow */
+/* Gallery Slideshow */
+.gallery-section {
+    margin: 50px 0;
+    text-align: center;
+}
+
+.carousel-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 900px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel-image {
+    width: 35%;
+    height: 25%;
+    opacity: 0.5;
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+    border-radius: 20px;
+}
+
+.carousel-image.current {
+    width: 45%;
+    opacity: 1;
+    transform: scale(1.1);
+    /* Zoom in for the current image */
+}
+
+.carousel-image.previous,
+.carousel-image.next {
+    position: absolute;
+    width: 25%;
+    height: 60%;
+    opacity: 0.3;
+    transition: opacity 1s ease-in-out;
+    border-radius: 20px;
+    /* Rounded corners for the previous and next images */
+}
+
+.carousel-image.previous {
+    left: 0;
+    transform: translateX(-100%);
+}
+
+.carousel-image.next {
+    right: 0;
+    transform: translateX(100%);
+}
+
+.carousel-container .carousel-image {
+    transform: none;
+    /* Optional: Disable zoom when hovered */
+    opacity: 1;
+}
+
 @media (max-width: 768px) {
     .home-header h1 {
         font-size: 2rem;
@@ -153,5 +212,37 @@ h2{
 
     .our-services p {
         font-size: 0.9rem;
+    }
+
+    .carousel-image {
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+    }
+
+    .carousel-image.current {
+        width: 100%;
+        transform: scale(1);
+    }
+
+    .carousel-image.previous,
+    .carousel-image.next {
+        position: absolute;
+        width: 5%;
+        height: 10%;
+        opacity: 0.3;
+        transition: opacity 1s ease-in-out;
+        border-radius: 20px;
+        /* Rounded corners for the previous and next images */
+    }
+
+    .carousel-image.previous {
+        left: 0;
+        transform: translateX(-100%);
+    }
+
+    .carousel-image.next {
+        right: 0;
+        transform: translateX(100%);
     }
 }
