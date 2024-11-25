@@ -1,4 +1,4 @@
-# 🚗🔧 **Opel Stop Website** 🔧🚗
+# 🚗🔧 **Opel Stop** 🔧🚗
 
 Welcome to **Opel Stop**, your trusted experts in **Opel**, **Isuzu**, and **Chevrolet** vehicle services. 🛠️✨ This website showcases the variety of services we offer, introduces you to our passionate team, and highlights our commitment to quality. Plus, explore a dynamic **image gallery** featuring our exceptional work. 🚘📸
 
@@ -58,3 +58,34 @@ Follow these steps to run the project locally:
 1. **Clone the Repository**:  
    ```bash
    git clone https://github.com/yourusername/opel-stop.git
+
+
+## 💻 **Technologies Used**
+
+- **Frontend**: React ⚛️  
+- **Styling**: CSS3 🎨  
+- **Routing**: React Router 🔄  
+- **Version Control**: Git & GitHub 🛠️  
+
+---
+
+## 🚀 **Features**
+
+- 📱 **Responsive Design**: Perfectly optimized for all devices.  
+- 🛠️ **Service Details**: Comprehensive insights into our offerings.  
+- 📸 **Image Gallery**: Showcasing our work and expertise.  
+- 🌟 **Customer Focus**: Easy-to-navigate interface for a seamless experience.  
+
+---
+
+## 📞 **Contact**
+
+For inquiries or support, feel free to reach out:  
+
+- 📧 **Email**: [info@opelstop.co.za](mailto:info@opelstop.co.za)  
+- 🌐 **Website**: [www.opelstop.co.za](https://www.opelstop.co.za)  
+- 📍 **Address**: [Your Business Address]  
+
+---
+
+✨ *Thank you for choosing Opel Stop! Let us take care of your car while you enjoy peace of mind.* 🚗💼  
