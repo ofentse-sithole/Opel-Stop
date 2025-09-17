@@ -1,5 +1,5 @@
 import '../../App.css'
-import ContactSection from '../section/ContactSection'
+import ContactSection from '../Sections/ContactInformation'
 
 const Contact = () => {
     return (
