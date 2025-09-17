@@ -41,7 +41,7 @@
 .menu-icon {
     display: none;
     /* Hidden by default */
-    color: #01418f;
+    color: #77dd77;
     cursor: pointer;
     font-size: 1.8rem;
 }
@@ -62,7 +62,7 @@
 }
 
 .nav-links {
-    color: #01418f;
+    color: #77dd77;
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -71,12 +71,12 @@
 }
 
 .nav-links:hover {
-    border-bottom: 4px solid #00eeff;
+    border-bottom: 4px solid #52da52;
     transition: all 0.2s ease-out;
 }
 
 .fa-bars {
-    color: #01418f;
+    color: #77dd77;
 }
 
 @media screen and (max-width: 960px) {
@@ -124,7 +124,7 @@
 
     .nav-links:hover {
         background-color: #fff;
-        color: #242424;
+        color: #77dd77;
         border-radius: 0;
     }
 
@@ -137,7 +137,7 @@
     }
 
     .fa-times {
-        color: #01418f;
+        color: #77dd77;
         font-size: 2rem;
     }
 }
