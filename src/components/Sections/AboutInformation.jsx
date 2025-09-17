@@ -10,7 +10,11 @@ const AboutContainer = styled.div`
   padding: 4rem 2rem;
   min-height: 70vh;
   background-color: white;
-  
+
+  @media (max-width: 1024px) {
+    gap: 3rem;
+  }
+
   @media (max-width: 768px) {
     flex-direction: column;
     gap: 2rem;
@@ -21,17 +25,21 @@ const AboutContainer = styled.div`
 const ImageSection = styled.div`
   flex: 1;
   position: relative;
+  display: flex;
+  justify-content: center;
 `;
 
 const ProfileImage = styled.img`
   width: 100%;
-  height: 400px;
-  object-fit: cover;
+  max-width: 500px;
+  height: auto;
+  object-fit: contain;
   border-radius: 12px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-  
+
   @media (max-width: 768px) {
-    height: 300px;
+    max-width: 100%;
+    height: auto;
   }
 `;
 
@@ -42,6 +50,7 @@ const ContentSection = styled.div`
 
   @media (max-width: 768px) {
     padding-left: 0;
+    text-align: center;
   }
 `;
 
@@ -51,7 +60,7 @@ const Title = styled.h1`
   color: #2c3e50;
   margin-bottom: 2rem;
   position: relative;
-  
+
   &::after {
     content: '';
     position: absolute;
@@ -62,9 +71,15 @@ const Title = styled.h1`
     background: #77dd77;
     border-radius: 2px;
   }
-  
+
   @media (max-width: 768px) {
-    font-size: 2.5rem;
+    font-size: 2rem;
+    text-align: center;
+
+    &::after {
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
 `;
 
@@ -74,6 +89,11 @@ const Description = styled.p`
   color: #5d6d7e;
   margin-bottom: 2rem;
   text-align: justify;
+
+  @media (max-width: 768px) {
+    text-align: center;
+    font-size: 1rem;
+  }
 `;
 
 const HighlightList = styled.ul`
@@ -88,7 +108,7 @@ const HighlightItem = styled.li`
   margin-bottom: 1rem;
   font-size: 1rem;
   color: #34495e;
-  
+
   &::before {
     content: '✓';
     background: #77dd77;
@@ -103,27 +123,15 @@ const HighlightItem = styled.li`
     margin-right: 1rem;
     font-size: 0.8rem;
   }
-`;
 
-const CTAButton = styled.button`
-  background: #77dd77;
-  color: white;
-  border: none;
-  padding: 1rem 2rem;
-  font-size: 1.1rem;
-  font-weight: 600;
-  border-radius: 50px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
-  
-  &:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(52, 152, 219, 0.4);
-  }
-  
-  &:active {
-    transform: translateY(0);
+  @media (max-width: 768px) {
+    justify-content: left;
+    text-align: left;
+    font-size: 0.95rem;
+
+    &::before {
+      margin-right: 0.5rem;
+    }
   }
 `;
 
@@ -154,20 +162,11 @@ const AboutPage = () => {
         </Description>
         
         <HighlightList>
-          <HighlightItem>
-            Established in 2011
-          </HighlightItem>
-          <HighlightItem>
-            Your trusted Opel, Isuzu, and Chevrolet Specialists.
-          </HighlightItem>
-          <HighlightItem>
-            All repairs and services are carried out to the highest standards.
-          </HighlightItem>
-          <HighlightItem>
-            We prioritize your experience and ensure your vehicle gets the best care.
-          </HighlightItem>
+          <HighlightItem>Established in 2011</HighlightItem>
+          <HighlightItem>Your trusted Opel, Isuzu, and Chevrolet Specialists.</HighlightItem>
+          <HighlightItem>All repairs and services are carried out to the highest standards.</HighlightItem>
+          <HighlightItem>We prioritize your experience and ensure your vehicle gets the best care.</HighlightItem>
         </HighlightList>
-        
       </ContentSection>
     </AboutContainer>
   );

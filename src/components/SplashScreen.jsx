@@ -25,7 +25,7 @@ function SplashScreen({ onLoadComplete }) {
 
     return (
         <div className="splash-screen">
-            <img src="/image/1.png" alt="Opel Stop Logo" className="splash-logo" />
+            <img src="/image/Opel-Stop-removebg-preview.png" alt="Opel Stop Logo" className="splash-logo" />
             <div className="loading-bar">
                 <div
                     className="loading-progress"
