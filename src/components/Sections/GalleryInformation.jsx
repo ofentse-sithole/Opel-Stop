@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const GallerySection = styled.section`
   padding: 5rem 2rem;
-  background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+  background: white;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -18,7 +18,7 @@ const GallerySection = styled.section`
     left: 0;
     right: 0;
     bottom: 0;
-    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Ccircle cx='30' cy='30' r='1'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E") repeat;
+    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23000000' fill-opacity='0.03'%3E%3Ccircle cx='30' cy='30' r='1'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E") repeat;
     z-index: 1;
   }
   
@@ -42,7 +42,7 @@ const GalleryHeader = styled.div`
 const MainTitle = styled.h2`
   font-size: 3.5rem;
   font-weight: 700;
-  color: white;
+  color: black;
   margin-bottom: 1rem;
   position: relative;
   display: inline-block;
@@ -66,7 +66,7 @@ const MainTitle = styled.h2`
 
 const Subtitle = styled.p`
   font-size: 1.2rem;
-  color: #cbd5e1;
+  color: #374151;
   max-width: 600px;
   margin: 2rem auto 0;
   line-height: 1.6;
@@ -91,10 +91,10 @@ const CarouselImage = styled.img`
   height: 300px;
   object-fit: cover;
   border-radius: 16px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
   transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
-  border: 3px solid rgba(255, 255, 255, 0.1);
+  border: 3px solid rgba(0, 0, 0, 0.1);
   
   @media (max-width: 768px) {
     width: 280px;
@@ -116,8 +116,8 @@ const CarouselImage = styled.img`
     transform: translateX(0) scale(1) rotateY(0deg);
     opacity: 1;
     z-index: 3;
-    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
-    border-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
+    border-color: rgba(0, 0, 0, 0.2);
   }
   
   &.next {
@@ -155,9 +155,9 @@ const NavigationControls = styled.div`
 `;
 
 const NavButton = styled.button`
-  background: rgba(255, 255, 255, 0.1);
-  border: 2px solid rgba(255, 255, 255, 0.2);
-  color: white;
+  background: rgba(0, 0, 0, 0.1);
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  color: black;
   width: 60px;
   height: 60px;
   border-radius: 50%;
@@ -170,8 +170,8 @@ const NavButton = styled.button`
   backdrop-filter: blur(10px);
   
   &:hover {
-    background: rgba(255, 255, 255, 0.2);
-    border-color: rgba(255, 255, 255, 0.4);
+    background: rgba(0, 0, 0, 0.2);
+    border-color: rgba(0, 0, 0, 0.4);
     transform: scale(1.1);
   }
   
@@ -197,12 +197,12 @@ const Dot = styled.button`
   height: 12px;
   border-radius: 50%;
   border: none;
-  background: ${props => props.active ? '#77dd77' : 'rgba(255, 255, 255, 0.3)'};
+  background: ${props => props.active ? '#77dd77' : 'rgba(0, 0, 0, 0.3)'};
   cursor: pointer;
   transition: all 0.3s ease;
   
   &:hover {
-    background: ${props => props.active ? '#77dd77' : 'rgba(255, 255, 255, 0.5)'};
+    background: ${props => props.active ? '#77dd77' : 'rgba(0, 0, 0, 0.5)'};
     transform: scale(1.2);
   }
 `;
@@ -211,13 +211,14 @@ const ImageCounter = styled.div`
   position: absolute;
   top: 20px;
   right: 20px;
-  background: rgba(0, 0, 0, 0.7);
-  color: white;
+  background: rgba(255, 255, 255, 0.9);
+  color: black;
   padding: 0.5rem 1rem;
   border-radius: 20px;
   font-size: 0.9rem;
   font-weight: 500;
   backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 0, 0, 0.1);
 `;
 
 const ProfessionalGallery = () => {
