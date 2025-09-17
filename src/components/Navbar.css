@@ -113,20 +113,22 @@
         z-index: 1;
     }
 
-    .nav-links {
-        text-align: center;
-        align-items: center;
-        padding: -1.5rem;
-        right: 50px;
-        width: -90%;
-        display: table;
+   .nav-links {
+    color: #77dd77;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    height: 100%;
+    border-radius: 25px; /* makes the paddle rounded */
+    transition: all 0.3s ease;
     }
 
     .nav-links:hover {
-        background-color: #fff;
-        color: #77dd77;
-        border-radius: 0;
+        background-color: #77dd77; /* green paddle */
+        color: #fff; /* switch text to white for contrast */
     }
+
 
     .menu-icon {
         display: block;
