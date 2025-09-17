@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const ServicesSection = styled.section`
   padding: 5rem 2rem;
-  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  background: white;
   min-height: 100vh;
   
   @media (max-width: 768px) {
