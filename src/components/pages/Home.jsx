@@ -1,6 +1,6 @@
 import '../../App.css'
 import HomeSection from '../section/HomeSection'
-import AboutSec from '../AboutSection/AboutInformation'
+import AboutSec from '../Sections/AboutInformation'
 
 const Home = () => {
     return (

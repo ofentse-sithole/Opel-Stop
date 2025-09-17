@@ -47,44 +47,9 @@ function HomeSection() {
             </div>
 
             <main className="home-main">
-                <section className="services-section">
-                    <div className="our-services">
-                        <h2>Our Services</h2>
-                        <p>Your trusted team for vehicle repairs and diagnostics.</p>
-                    </div>
-                    <div className="services-grid">
-                        <a href="tel:+27824034735" className="service-item">
-                            <h3>Clutch Replacements</h3>
-                            <p>Fast and reliable clutch replacements to keep you on the road.</p>
-                        </a>
-                        <a href="tel:+27824034735" className="service-item">
-                            <h3>Engine Overhaul</h3>
-                            <p>Full engine services to restore performance.</p>
-                        </a>
-                        <a href="tel:+27824034735" className="service-item">
-                            <h3>Brake Replacements</h3>
-                            <p>Expert brake services to ensure your safety.</p>
-                        </a>
-                        <a href="tel:+27824034735" className="service-item">
-                            <h3>Cylinder Head Overhaul</h3>
-                            <p>Professional overhaul services for lasting engine health.</p>
-                        </a>
-                        <a href="tel:+27824034735" className="service-item">
-                            <h3>Suspension Repairs</h3>
-                            <p>Keep your ride smooth with our suspension services.</p>
-                        </a>
-                        <a href="tel:+27824034735" className="service-item">
-                            <h3>Diagnostic Services</h3>
-                            <p>Accurate diagnostics for any warning lights or issues.</p>
-                        </a>
-                        <a href="tel:+27824034735" className="service-item">
-                            <h3>Towing Services</h3>
-                            <p>Emergency towing available for your convenience.</p>
-                        </a>
-                    </div>
-                </section>
+            
 
-                {/* Image Slideshow Section */}
+                {/* Image Slideshow Section 
                 <section className="gallery-section">
                     <h2>Our Gallery</h2>
                     <div className="carousel-container">
@@ -104,23 +69,15 @@ function HomeSection() {
                             className="carousel-image next"
                         />
                     </div>
-                </section>
+                </section>*/}
 
-                <section className="about-section">
-                    <div className="our-services">
-                        <h2>About Us</h2>
-                        <p>
-                            At Opel Stop, we have been providing specialized services for Opel, Isuzu, and Chevrolet since 2011. Our experienced team offers a wide range of repair and maintenance services.
-                        </p>
-                    </div>
-                    <button className="cta-button" onClick={AboutPage}>Read More</button>
-                </section>
+
             </main>
 
-            <footer className="home-footer">
+           {/*} <footer className="home-footer">
                 <p>© {new Date().getFullYear()} Opel Stop. All rights reserved.</p>
                 <p>Developed by <a href="https://erencedevelopers.co.za/">Erence Developers</a></p>
-            </footer>
+            </footer>*/}
         </div>
     );
 }

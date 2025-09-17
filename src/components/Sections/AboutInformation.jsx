@@ -9,6 +9,7 @@ const AboutContainer = styled.div`
   margin: 0 auto;
   padding: 4rem 2rem;
   min-height: 70vh;
+  background-color: white;
   
   @media (max-width: 768px) {
     flex-direction: column;
@@ -37,7 +38,8 @@ const ProfileImage = styled.img`
 const ContentSection = styled.div`
   flex: 1;
   padding-left: 2rem;
-  
+  background-color: white;
+
   @media (max-width: 768px) {
     padding-left: 0;
   }
@@ -130,46 +132,42 @@ const AboutPage = () => {
     <AboutContainer>
       <ImageSection>
         <ProfileImage 
-          src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
-          alt="Professional working on laptop"
+          src="./image/Car-Logo.png" 
+          alt="Logo"
         />
       </ImageSection>
       
       <ContentSection>
-        <Title>ABOUT PAGE!</Title>
+        <Title>About Opel Stop</Title>
         
         <Description>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
-          fugiat nulla pariatur.
+          Opel Stop was founded in 2011 with a passion for delivering expert mechanical services
+          to Opel, Isuzu, and Chevrolet owners. Over the years, we've grown to become a trusted
+          name in the industry, providing high-quality vehicle services with a focus on customer
+          satisfaction and professional craftsmanship.
         </Description>
         
         <Description>
-          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
-          deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus 
-          error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
+          Our mission is to provide top-tier automotive services that keep your vehicle running
+          smoothly and safely. We strive to offer exceptional service, using cutting-edge diagnostic
+          tools and expert mechanical skills to address a range of vehicle issues.
         </Description>
         
         <HighlightList>
           <HighlightItem>
-            Expert in modern web development technologies and frameworks
+            Established in 2011
           </HighlightItem>
           <HighlightItem>
-            Passionate about creating user-centered digital experiences
+            Your trusted Opel, Isuzu, and Chevrolet Specialists.
           </HighlightItem>
           <HighlightItem>
-            Committed to delivering high-quality, scalable solutions
+            All repairs and services are carried out to the highest standards.
           </HighlightItem>
           <HighlightItem>
-            Strong focus on performance optimization and best practices
+            We prioritize your experience and ensure your vehicle gets the best care.
           </HighlightItem>
         </HighlightList>
         
-        <CTAButton>
-          Get In Touch
-        </CTAButton>
       </ContentSection>
     </AboutContainer>
   );
