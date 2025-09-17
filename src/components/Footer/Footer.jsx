@@ -67,6 +67,11 @@ const CompanyLogo = styled.div`
   align-items: center;
   gap: 1rem;
   margin-bottom: 1rem;
+
+   @media (max-width: 968px) {
+    justify-content: center;  /* centers horizontally */
+    text-align: center;
+  }
 `;
 
 const LogoIcon = styled.img`
