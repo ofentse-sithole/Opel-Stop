@@ -9,7 +9,8 @@ const HomeHeroSection = () => {
   // Video URLs - Fixed paths to be consistent
   const videos = [
     "/videos/video1.mp4",
-    "/videos/video2.mp4"
+    "/videos/video2.mp4",
+    "/videos/video3.mp4"
   ];
 
   // Handle video loading
