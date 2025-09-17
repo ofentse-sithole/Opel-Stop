@@ -32,7 +32,7 @@
 }
 
 .navbar-image {
-    height: 150px;
+    height: 110px;
     /* Reduced height for smaller logo size */
     margin-right: 10px;
     /* Adds some space between the image and text */
@@ -41,7 +41,7 @@
 .menu-icon {
     display: none;
     /* Hidden by default */
-    color: #01418f;
+    color: #77dd77;
     cursor: pointer;
     font-size: 1.8rem;
 }
@@ -62,7 +62,7 @@
 }
 
 .nav-links {
-    color: #01418f;
+    color: #77dd77;
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -71,17 +71,17 @@
 }
 
 .nav-links:hover {
-    border-bottom: 4px solid #00eeff;
+    border-bottom: 4px solid #52da52;
     transition: all 0.2s ease-out;
 }
 
 .fa-bars {
-    color: #01418f;
+    color: #77dd77;
 }
 
 @media screen and (max-width: 960px) {
     .navbar-image {
-        height: 150px;
+        height: 90px;
         /* Adjust the height for mobile screens */
     }
 
@@ -113,20 +113,22 @@
         z-index: 1;
     }
 
-    .nav-links {
-        text-align: center;
-        align-items: center;
-        padding: -1.5rem;
-        right: 50px;
-        width: -90%;
-        display: table;
+   .nav-links {
+    color: #77dd77;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    height: 100%;
+    border-radius: 25px; /* makes the paddle rounded */
+    transition: all 0.3s ease;
     }
 
     .nav-links:hover {
-        background-color: #fff;
-        color: #242424;
-        border-radius: 0;
+        background-color: #77dd77; /* green paddle */
+        color: #fff; /* switch text to white for contrast */
     }
+
 
     .menu-icon {
         display: block;
@@ -137,7 +139,7 @@
     }
 
     .fa-times {
-        color: #01418f;
+        color: #77dd77;
         font-size: 2rem;
     }
 }

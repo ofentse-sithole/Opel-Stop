@@ -16,7 +16,7 @@ function Navbar()  {
                 <div className="navbar-container">
                     {/* Logo navigation using Link */}
                     <Link to="/home" className="navbar-logo" onClick={closeMobileMenu}>
-                        <img src="/image/opel-stop-logo-removebg-preview.png" alt="Opel Stop Logo" className="navbar-image" />
+                        <img src="/image/Opel-Stop-removebg-preview.png" alt="Opel Stop Logo" className="navbar-image" />
                     </Link>
                     <div className="menu-icon" onClick={handleClick}>
                         <FontAwesomeIcon icon={click ? faTimes : faBars} />
@@ -34,13 +34,13 @@ function Navbar()  {
                             <Link to="/services" className="nav-links" onClick={closeMobileMenu}>
                                 Services
                             </Link>
-                        </li>*/}
+                        </li>
 
                         <li className="nav-item">
                             <Link to="/about" className="nav-links" onClick={closeMobileMenu}>
                                 About
                             </Link>
-                        </li>
+                        </li>*/}
 
                         <li className="nav-item">
                             <Link to="/contact" className="nav-links" onClick={closeMobileMenu}>

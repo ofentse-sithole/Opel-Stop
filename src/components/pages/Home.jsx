@@ -1,10 +1,18 @@
 import '../../App.css'
-import HomeSection from '../section/HomeSection'
+import HeroHomeSection from '../HeroSection/HomeHeroSection'
+import AboutSec from '../Sections/AboutInformation'
+import ServiceSec from '../Sections/ServicesInfomation'
+import GallerySec from '../Sections/GalleryInformation'
+import Footer from '../Footer/Footer'
 
 const Home = () => {
     return (
         <div>
-            <HomeSection/>
+            <HeroHomeSection/>
+            <AboutSec/>
+            <ServiceSec/>
+            <GallerySec/>
+            <Footer/>
         </div>
     )
 }
