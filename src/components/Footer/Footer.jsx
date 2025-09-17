@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import Logo from '/image/Opel-Stop-removebg-preview.png';
+import { FaWhatsapp, FaPhone } from "react-icons/fa";
+
 
 const FooterContainer = styled.footer`
   background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
@@ -316,12 +318,12 @@ const ProfessionalFooter = () => {
               Your trusted partner for all Opel, Isuzu, and Chevrolet automotive needs. 
               Professional repairs, diagnostics, and maintenance services with over a decade of experience.
             </CompanyDescription>
-            <SocialLinks>
-              <SocialLink href="#" aria-label="Facebook">📘</SocialLink>
-              <SocialLink href="#" aria-label="Instagram">📸</SocialLink>
-              <SocialLink href="https://wa.me/27824034735" aria-label="WhatsApp">💬</SocialLink>
-              <SocialLink href="tel:+27824034735" aria-label="Phone">📞</SocialLink>
-            </SocialLinks>
+            <SocialLink href="https://wa.me/27824034735" aria-label="WhatsApp">
+              <FaWhatsapp size={24} />
+            </SocialLink>
+            <SocialLink href="tel:+27824034735" aria-label="Phone">
+              <FaPhone size={24} />
+            </SocialLink>
           </CompanySection>
 
           <FooterSection>
