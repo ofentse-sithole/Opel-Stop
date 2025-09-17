@@ -36,15 +36,6 @@ function HomeSection() {
 
     return (
         <div className="home-container">
-            <header className="home-header">
-                <h1>Welcome to Opel Stop</h1>
-                <p>Opel, Isuzu, and Chevrolet Specialists Since 2011</p>
-            </header>
-
-            {/* New Image Section */}
-            <div className="home-image-container">
-                <img src="/image/untitled_design.jpg" alt="Opel Stop - Vehicle Repairs" className="home-header-image" width="900px" />
-            </div>
 
             <main className="home-main">
             

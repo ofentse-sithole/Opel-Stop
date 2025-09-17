@@ -8,11 +8,8 @@ const HomeHeroSection = () => {
 
   // Video URLs - Fixed paths to be consistent
   const videos = [
-    "/videos/iPhone12.mp4",
-    "/videos/iPhone13.mp4",
-    "/videos/iPhone14.mp4",
-    "/videos/iPhone15.mp4",
-    "/videos/iPhone16.mp4"
+    "/videos/video1.mp4",
+    "/videos/video2.mp4"
   ];
 
   // Handle video loading
