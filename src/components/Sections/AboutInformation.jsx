@@ -59,7 +59,7 @@ const Title = styled.h1`
     bottom: -10px;
     width: 60px;
     height: 4px;
-    background: linear-gradient(90deg, #3498db, #2980b9);
+    background: #77dd77;
     border-radius: 2px;
   }
   
@@ -91,7 +91,7 @@ const HighlightItem = styled.li`
   
   &::before {
     content: '✓';
-    background: linear-gradient(45deg, #3498db, #2980b9);
+    background: #77dd77;
     color: white;
     font-weight: bold;
     border-radius: 50%;
@@ -106,7 +106,7 @@ const HighlightItem = styled.li`
 `;
 
 const CTAButton = styled.button`
-  background: linear-gradient(45deg, #3498db, #2980b9);
+  background: #77dd77;
   color: white;
   border: none;
   padding: 1rem 2rem;

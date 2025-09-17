@@ -37,7 +37,7 @@ const MainTitle = styled.h2`
     transform: translateX(-50%);
     width: 80px;
     height: 4px;
-    background: linear-gradient(90deg, #ef4444, #dc2626);
+    background: #77dd77;
     border-radius: 2px;
   }
   
@@ -85,7 +85,7 @@ const ServiceItem = styled.a`
     left: 0;
     width: 100%;
     height: 4px;
-    background: linear-gradient(90deg, #ef4444, #dc2626);
+    background: #77dd77;
     transform: scaleX(0);
     transform-origin: left;
     transition: transform 0.3s ease;
@@ -108,7 +108,7 @@ const ServiceItem = styled.a`
 const ServiceIcon = styled.div`
   width: 60px;
   height: 60px;
-  background: linear-gradient(135deg, #ef4444, #dc2626);
+  background: #77dd77;
   border-radius: 12px;
   display: flex;
   align-items: center;
@@ -138,7 +138,7 @@ const CallButton = styled.div`
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  color: #ef4444;
+  color: #77dd77;
   font-weight: 600;
   font-size: 0.9rem;
   text-transform: uppercase;
@@ -151,7 +151,7 @@ const CallButton = styled.div`
   }
   
   ${ServiceItem}:hover & {
-    color: #dc2626;
+    color: #77dd77;
     
     &::after {
       transform: translateX(4px);

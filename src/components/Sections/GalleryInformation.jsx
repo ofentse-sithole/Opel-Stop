@@ -55,7 +55,7 @@ const MainTitle = styled.h2`
     transform: translateX(-50%);
     width: 80px;
     height: 4px;
-    background: linear-gradient(90deg, #ef4444, #dc2626);
+    background: #77dd77;
     border-radius: 2px;
   }
   
@@ -197,12 +197,12 @@ const Dot = styled.button`
   height: 12px;
   border-radius: 50%;
   border: none;
-  background: ${props => props.active ? '#ef4444' : 'rgba(255, 255, 255, 0.3)'};
+  background: ${props => props.active ? '#77dd77' : 'rgba(255, 255, 255, 0.3)'};
   cursor: pointer;
   transition: all 0.3s ease;
   
   &:hover {
-    background: ${props => props.active ? '#dc2626' : 'rgba(255, 255, 255, 0.5)'};
+    background: ${props => props.active ? '#77dd77' : 'rgba(255, 255, 255, 0.5)'};
     transform: scale(1.2);
   }
 `;
