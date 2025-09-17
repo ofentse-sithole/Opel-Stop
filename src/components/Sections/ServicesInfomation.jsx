@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
+import { FaCogs, FaWrench, FaCarCrash, FaTools, FaCarSide, FaSearch, FaTruck } from "react-icons/fa";
+
 
 const ServicesSection = styled.section`
   padding: 5rem 2rem;
@@ -163,39 +165,40 @@ const services = [
   {
     title: "Clutch Replacements",
     description: "Fast and reliable clutch replacements to keep you on the road.",
-    icon: "⚙️"
+    icon: <FaCogs size={24} />
   },
   {
     title: "Engine Overhaul", 
     description: "Full engine services to restore performance.",
-    icon: "🔧"
+    icon: <FaWrench size={24} />
   },
   {
     title: "Brake Replacements",
     description: "Expert brake services to ensure your safety.",
-    icon: "🛑"
+    icon: <FaCarCrash size={24} />
   },
   {
     title: "Cylinder Head Overhaul",
     description: "Professional overhaul services for lasting engine health.",
-    icon: "🔩"
+    icon: <FaTools size={24} />
   },
   {
     title: "Suspension Repairs",
     description: "Keep your ride smooth with our suspension services.",
-    icon: "🏁"
+    icon: <FaCarSide size={24} />
   },
   {
     title: "Diagnostic Services",
     description: "Accurate diagnostics for any warning lights or issues.",
-    icon: "🔍"
+    icon: <FaSearch size={24} />
   },
   {
     title: "Towing Services",
     description: "Emergency towing available for your convenience.",
-    icon: "🚛"
+    icon: <FaTruck size={24} />
   }
 ];
+
 
 const AutomotiveServices = () => {
   return (

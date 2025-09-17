@@ -2,6 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import Logo from '/image/Opel-Stop-removebg-preview.png';
 import { FaWhatsapp, FaPhone } from "react-icons/fa";
+import { FaMapMarkerAlt,  FaEnvelope, FaClock } from "react-icons/fa";
+
 
 
 const FooterContainer = styled.footer`
@@ -206,7 +208,7 @@ const SocialLink = styled.a`
     border-color: #77dd77;
     color: white;
     transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(239, 68, 68, 0.3);
+    box-shadow: #77dd77;
   }
 `;
 
@@ -275,14 +277,14 @@ const NewsletterInput = styled.input`
   
   &:focus {
     outline: none;
-    border-color: #ef4444;
+    border-color: #77dd77;
     box-shadow: 0 0 0 2px rgba(239, 68, 68, 0.2);
   }
 `;
 
 const NewsletterButton = styled.button`
   width: 100%;
-  background: linear-gradient(135deg, #ef4444, #dc2626);
+  background: #77dd77;
   color: white;
   border: none;
   padding: 0.75rem;
@@ -340,30 +342,41 @@ const ProfessionalFooter = () => {
           <FooterSection>
             <SectionTitle>Contact Info</SectionTitle>
             <ContactInfo>
-              <ContactItem>
-                <ContactIcon>📍</ContactIcon>
-                <div>
-                  66 Topaas Street<br />
-                  Klerksoord, Unit 7<br />
-                  Pretoria North
-                </div>
-              </ContactItem>
-              <ContactItem>
-                <ContactIcon>📞</ContactIcon>
-                <div>082 403 4735</div>
-              </ContactItem>
-              <ContactItem>
-                <ContactIcon>✉️</ContactIcon>
-                <div>theopelstop@gmail.com</div>
-              </ContactItem>
-              <ContactItem>
-                <ContactIcon>🕒</ContactIcon>
-                <div>
-                  Mon-Fri: 8 AM - 5 PM<br />
-                  Sat: 8 AM - 1 PM
-                </div>
-              </ContactItem>
-            </ContactInfo>
+    <ContactItem>
+      <ContactIcon>
+        <FaMapMarkerAlt size={20} />
+      </ContactIcon>
+      <div>
+        66 Topaas Street<br />
+        Klerksoord, Unit 7<br />
+        Pretoria North
+      </div>
+    </ContactItem>
+
+    <ContactItem>
+      <ContactIcon>
+        <FaPhone size={20} />
+      </ContactIcon>
+      <div>082 403 4735</div>
+    </ContactItem>
+
+    <ContactItem>
+      <ContactIcon>
+        <FaEnvelope size={20} />
+      </ContactIcon>
+      <div>theopelstop@gmail.com</div>
+    </ContactItem>
+
+    <ContactItem>
+      <ContactIcon>
+        <FaClock size={20} />
+      </ContactIcon>
+      <div>
+        Mon-Fri: 8 AM - 5 PM<br />
+        Sat: 8 AM - 1 PM
+      </div>
+    </ContactItem>
+  </ContactInfo>
           </FooterSection>
         </FooterMain>
 
