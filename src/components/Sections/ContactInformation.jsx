@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
+import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaClock } from "react-icons/fa";
 
 const ContactContainer = styled.div`
   min-height: 100vh;
@@ -408,43 +409,44 @@ const ProfessionalContactSection = () => {
             <SectionTitle>Our Contact Information</SectionTitle>
             <ContactInfo>
               <InfoItem>
-                <InfoIcon>📍</InfoIcon>
-                <InfoContent>
-                  <InfoLabel>Address:</InfoLabel>
-                  <InfoText>66 Topaas Street, Klerksoord, Unit 7, Pretoria North</InfoText>
-                </InfoContent>
-              </InfoItem>
+  <InfoIcon><FaMapMarkerAlt /></InfoIcon>
+  <InfoContent>
+    <InfoLabel>Address:</InfoLabel>
+    <InfoText>66 Topaas Street, Klerksoord, Unit 7, Pretoria North</InfoText>
+  </InfoContent>
+</InfoItem>
 
-              <InfoItem>
-                <InfoIcon>📞</InfoIcon>
-                <InfoContent>
-                  <InfoLabel>Phone:</InfoLabel>
-                  <InfoText>
-                    <a href="tel:+27824034735">082 403 4735</a>
-                  </InfoText>
-                </InfoContent>
-              </InfoItem>
+<InfoItem>
+  <InfoIcon><FaPhoneAlt /></InfoIcon>
+  <InfoContent>
+    <InfoLabel>Phone:</InfoLabel>
+    <InfoText>
+      <a href="tel:+27824034735">082 403 4735</a>
+    </InfoText>
+  </InfoContent>
+</InfoItem>
 
-              <InfoItem>
-                <InfoIcon>✉️</InfoIcon>
-                <InfoContent>
-                  <InfoLabel>Email:</InfoLabel>
-                  <InfoText>
-                    <a href="mailto:theopelstop@gmail.com">theopelstop@gmail.com</a>
-                  </InfoText>
-                </InfoContent>
-              </InfoItem>
+<InfoItem>
+  <InfoIcon><FaEnvelope /></InfoIcon>
+  <InfoContent>
+    <InfoLabel>Email:</InfoLabel>
+    <InfoText>
+      <a href="mailto:theopelstop@gmail.com">theopelstop@gmail.com</a>
+    </InfoText>
+  </InfoContent>
+</InfoItem>
 
-              <InfoItem>
-                <InfoIcon>🕒</InfoIcon>
-                <InfoContent>
-                  <InfoLabel>Working Hours:</InfoLabel>
-                  <InfoText>
-                    Mon-Fri: 8 AM - 5 PM<br />
-                    Sat: 8 AM - 1 PM
-                  </InfoText>
-                </InfoContent>
-              </InfoItem>
+<InfoItem>
+  <InfoIcon><FaClock /></InfoIcon>
+  <InfoContent>
+    <InfoLabel>Working Hours:</InfoLabel>
+    <InfoText>
+      Mon-Fri: 8 AM - 5 PM<br />
+      Sat: 8 AM - 1 PM
+    </InfoText>
+  </InfoContent>
+</InfoItem>
+
             </ContactInfo>
           </ContactCard>
 
