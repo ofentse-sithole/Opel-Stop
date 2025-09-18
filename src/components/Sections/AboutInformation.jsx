@@ -164,8 +164,8 @@ const AboutPage = () => {
         <HighlightList>
           <HighlightItem>Established in 2011</HighlightItem>
           <HighlightItem>Your trusted Opel, Isuzu, and Chevrolet Specialists.</HighlightItem>
-          <HighlightItem>All repairs and services are carried out to the highest standards.</HighlightItem>
-          <HighlightItem>We prioritize your experience and ensure your vehicle gets the best care.</HighlightItem>
+          <HighlightItem>Premium repairs. Exceptional service.</HighlightItem>
+          <HighlightItem>We put you first and your car in the best hands.</HighlightItem>
         </HighlightList>
       </ContentSection>
     </AboutContainer>
