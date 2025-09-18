@@ -3,9 +3,10 @@ import styled from 'styled-components';
 
 const ContactContainer = styled.div`
   min-height: 100vh;
-  background: #fffff;
+  background: #ffffff;
   position: relative;
   
+
   &::before {
     content: '';
     position: absolute;
@@ -16,6 +17,10 @@ const ContactContainer = styled.div`
     background: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23334155' fill-opacity='0.03' fill-rule='evenodd'%3E%3Cpath d='M0 0h20v20H0V0zm10 17a7 7 0 1 0 0-14 7 7 0 0 0 0 14zm20 0a7 7 0 1 0 0-14 7 7 0 0 0 0 14zM10 37a7 7 0 1 0 0-14 7 7 0 0 0 0 14zm10-17h20v20H20V20zm10 17a7 7 0 1 0 0-14 7 7 0 0 0 0 14z'/%3E%3C/g%3E%3C/svg%3E") repeat;
     z-index: 1;
   }
+
+  @media (max-width: 768px) {
+    padding-top: 2rem;
+  }
 `;
 
 const Container = styled.div`
@@ -24,7 +29,7 @@ const Container = styled.div`
   padding: 0 2rem;
   position: relative;
   z-index: 2;
-  
+
   @media (max-width: 768px) {
     padding: 0 1rem;
   }
@@ -33,7 +38,7 @@ const Container = styled.div`
 const ContactHeader = styled.header`
   text-align: center;
   padding: 5rem 0 3rem;
-  
+
   @media (max-width: 768px) {
     padding: 3rem 0 2rem;
   }
@@ -46,7 +51,7 @@ const MainTitle = styled.h1`
   margin-bottom: 1rem;
   position: relative;
   display: inline-block;
-  
+
   &::after {
     content: '';
     position: absolute;
@@ -58,9 +63,10 @@ const MainTitle = styled.h1`
     background: #77dd77;
     border-radius: 2px;
   }
-  
+
   @media (max-width: 768px) {
-    font-size: 2.5rem;
+    font-size: 2rem;
+    line-height: 1.2;
   }
 `;
 
@@ -70,6 +76,12 @@ const Subtitle = styled.p`
   max-width: 600px;
   margin: 2rem auto 0;
   line-height: 1.6;
+
+  @media (max-width: 768px) {
+    font-size: 1rem;
+    margin: 1.5rem auto 0;
+    padding: 0 0.5rem;
+  }
 `;
 
 const ContactMain = styled.main`
@@ -77,10 +89,11 @@ const ContactMain = styled.main`
   grid-template-columns: 1fr 1fr;
   gap: 3rem;
   margin-bottom: 4rem;
-  
+
   @media (max-width: 968px) {
     grid-template-columns: 1fr;
     gap: 2rem;
+    margin-bottom: 2rem;
   }
 `;
 
@@ -91,10 +104,14 @@ const ContactCard = styled.section`
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 0 10px 25px rgba(0, 0, 0, 0.1);
   border: 1px solid #e2e8f0;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  
+
   &:hover {
     transform: translateY(-4px);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  }
+
+  @media (max-width: 768px) {
+    padding: 1.5rem;
   }
 `;
 
@@ -106,7 +123,7 @@ const SectionTitle = styled.h2`
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  
+
   &::before {
     content: '';
     width: 4px;
@@ -114,12 +131,20 @@ const SectionTitle = styled.h2`
     background: #77dd77;
     border-radius: 2px;
   }
+
+  @media (max-width: 768px) {
+    font-size: 1.5rem;
+  }
 `;
 
 const ContactInfo = styled.div`
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+
+  @media (max-width: 480px) {
+    gap: 1rem;
+  }
 `;
 
 const InfoItem = styled.div`
@@ -131,9 +156,14 @@ const InfoItem = styled.div`
   border-radius: 12px;
   border-left: 4px solid #77dd77;
   transition: background-color 0.3s ease;
-  
+
   &:hover {
     background: #f1f5f9;
+  }
+
+  @media (max-width: 480px) {
+    flex-direction: column;
+    align-items: flex-start;
   }
 `;
 
@@ -148,7 +178,6 @@ const InfoIcon = styled.div`
   color: white;
   font-size: 1.2rem;
   flex-shrink: 0;
-  box-shadow: #77dd77;
 `;
 
 const InfoContent = styled.div`
@@ -165,12 +194,12 @@ const InfoLabel = styled.strong`
 const InfoText = styled.span`
   color: #6b7280;
   line-height: 1.5;
-  
+
   a {
     color: #77dd77;
     text-decoration: none;
     transition: color 0.3s ease;
-    
+
     &:hover {
       color: #77dd77;
       text-decoration: underline;
@@ -205,16 +234,21 @@ const FormInput = styled.input`
   font-size: 1rem;
   transition: all 0.3s ease;
   background: white;
-  
+
   &:focus {
     outline: none;
     border-color: #77dd77;
     box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.1);
     transform: translateY(-1px);
   }
-  
+
   &::placeholder {
     color: #9ca3af;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 0.9rem;
+    padding: 0.85rem;
   }
 `;
 
@@ -228,16 +262,21 @@ const FormTextarea = styled.textarea`
   transition: all 0.3s ease;
   font-family: inherit;
   background: white;
-  
+
   &:focus {
     outline: none;
     border-color: #77dd77;
     box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.1);
     transform: translateY(-1px);
   }
-  
+
   &::placeholder {
     color: #9ca3af;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 0.9rem;
+    padding: 0.85rem;
   }
 `;
 
@@ -254,14 +293,21 @@ const SubmitButton = styled.button`
   text-transform: uppercase;
   letter-spacing: 0.5px;
   box-shadow: 0 4px 15px rgba(239, 68, 68, 0.3);
-  
+  width: 100%;
+  text-align: center;
+
   &:hover {
     transform: translateY(-2px);
     box-shadow: 0 8px 25px rgba(239, 68, 68, 0.4);
   }
-  
+
   &:active {
     transform: translateY(0);
+  }
+
+  @media (max-width: 480px) {
+    font-size: 1rem;
+    padding: 0.9rem 1rem;
   }
 `;
 
@@ -273,6 +319,10 @@ const MapSection = styled.section`
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 0 10px 25px rgba(0, 0, 0, 0.1);
   border: 1px solid #e2e8f0;
   overflow: hidden;
+
+  @media (max-width: 768px) {
+    padding: 1.5rem;
+  }
 `;
 
 const MapFrame = styled.iframe`
@@ -281,9 +331,13 @@ const MapFrame = styled.iframe`
   border: none;
   border-radius: 12px;
   transition: transform 0.3s ease;
-  
+
   &:hover {
     transform: scale(1.02);
+  }
+
+  @media (max-width: 768px) {
+    height: 250px;
   }
 `;
 
@@ -299,13 +353,13 @@ const FooterText = styled.p`
   color: #64748b;
   font-size: 0.9rem;
   margin-bottom: 0.5rem;
-  
+
   a {
     color: #77dd77;
     text-decoration: none;
     font-weight: 600;
     transition: color 0.3s ease;
-    
+
     &:hover {
       color: #77dd77;
       text-decoration: underline;
@@ -320,7 +374,6 @@ const ProfessionalContactSection = () => {
     message: ''
   });
 
-  // Scroll to the top of the page when the component is mounted
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -335,9 +388,7 @@ const ProfessionalContactSection = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission logic here
     console.log('Form submitted:', formData);
-    // Reset form
     setFormData({ name: '', email: '', message: '' });
   };
 
@@ -363,7 +414,7 @@ const ProfessionalContactSection = () => {
                   <InfoText>66 Topaas Street, Klerksoord, Unit 7, Pretoria North</InfoText>
                 </InfoContent>
               </InfoItem>
-              
+
               <InfoItem>
                 <InfoIcon>📞</InfoIcon>
                 <InfoContent>
@@ -373,7 +424,7 @@ const ProfessionalContactSection = () => {
                   </InfoText>
                 </InfoContent>
               </InfoItem>
-              
+
               <InfoItem>
                 <InfoIcon>✉️</InfoIcon>
                 <InfoContent>
@@ -383,7 +434,7 @@ const ProfessionalContactSection = () => {
                   </InfoText>
                 </InfoContent>
               </InfoItem>
-              
+
               <InfoItem>
                 <InfoIcon>🕒</InfoIcon>
                 <InfoContent>
