@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import Logo from '/image/Opel-Stop-removebg-preview.png';
-import { FaWhatsapp, FaPhone } from "react-icons/fa";
-import { FaMapMarkerAlt,  FaEnvelope, FaClock } from "react-icons/fa";
+import { FaWhatsapp, FaPhoneAlt, FaMapMarkerAlt, FaEnvelope, FaClock } from "react-icons/fa";
+
 
 
 
@@ -168,7 +168,7 @@ const ContactItem = styled.div`
 const ContactIcon = styled.div`
   width: 35px;
   height: 35px;
-  background: rgba(239, 68, 68, 0.2);
+  background: #00a300ff;
   border-radius: 8px;
   display: flex;
   align-items: center;
@@ -176,6 +176,10 @@ const ContactIcon = styled.div`
   color: #77dd77;
   font-size: 1rem;
   flex-shrink: 0;
+
+   @media (max-width: 768px) {
+    display: none; /* hide icons on tablets & mobile */
+  }
 `;
 
 const SocialLinks = styled.div`
@@ -320,12 +324,17 @@ const ProfessionalFooter = () => {
               Your trusted partner for all Opel, Isuzu, and Chevrolet automotive needs. 
               Professional repairs, diagnostics, and maintenance services with over a decade of experience.
             </CompanyDescription>
-            <SocialLink href="https://wa.me/27824034735" aria-label="WhatsApp">
-              <FaWhatsapp size={24} />
-            </SocialLink>
-            <SocialLink href="tel:+27824034735" aria-label="Phone">
-              <FaPhone size={24} />
-            </SocialLink>
+
+            {/* Social links grouped together */}
+            <SocialLinks>
+              <SocialLink href="https://wa.me/27824034735" aria-label="WhatsApp">
+                <FaWhatsapp size={24} />
+              </SocialLink>
+              <SocialLink href="tel:+27824034735" aria-label="Phone">
+                <FaPhoneAlt size={24} />
+              </SocialLink>
+            </SocialLinks>
+            
           </CompanySection>
 
           <FooterSection>
@@ -355,10 +364,11 @@ const ProfessionalFooter = () => {
 
     <ContactItem>
       <ContactIcon>
-        <FaPhone size={20} />
+        <FaPhoneAlt size={20} />
       </ContactIcon>
       <div>082 403 4735</div>
     </ContactItem>
+
 
     <ContactItem>
       <ContactIcon>
