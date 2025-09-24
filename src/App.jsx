@@ -4,6 +4,7 @@ import SplashScreen from './components/SplashScreen';
 import Navbar from './components/Navbar';
 import Home from './components/pages/Home';
 import Contact from './components/pages/Contact';
+import ScrollTop from './components/ScrollTop/ScrollTop';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 
@@ -20,6 +21,7 @@ function App() {
   return (
     <HelmetProvider>
       <Router>
+    <ScrollTop/>
         {isLoading ? (
           <SplashScreen />
         ) : (
